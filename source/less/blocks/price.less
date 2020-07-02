@@ -10,6 +10,7 @@
   width: 900px;
 
   margin: auto;
+  padding-top: 60px;
 }
 
 .price__advantages {
@@ -19,16 +20,47 @@
   text-align: center;
 
   margin: auto;
+  padding-bottom: 40px;
 }
 
 .price__advantage-wrapper {
+  position: relative;
+
   width: 400px;
   text-align: center;
+
+  padding-top: 230px;
 }
 
-// .price__advantages--test {
-//   // width: 750px;
-// }
+.price__advantage-wrapper--gaurantee::before {
+  content: "";
+
+  position: absolute;
+
+  width: 176px;
+  height: 130px;
+
+  top: 60px;
+  left: 110px;
+
+  background-image: url(../img/gaurantee.svg);
+  background-repeat: no-repeat;
+}
+
+.price__advantage-wrapper--maket::before {
+  content: "";
+
+  position: absolute;
+
+  width: 228px;
+  height: 130px;
+
+  top: 60px;
+  left: 90px;
+
+  background-image: url(../img/maket.svg);
+  background-repeat: no-repeat;
+}
 
 .price__advantages--guarantee {
   width: 340px;
@@ -40,14 +72,18 @@
   margin: auto;
 }
 
-.price__slogan-test {
-  display: block;
-  font-size: 36px;
-  line-height: 44px;
-  margin: auto;
-}
-
 .price__slogan {
+  display: block;
+
   font-size: 30px;
   line-height: 37px;
+
+  padding-bottom: 10px;
+}
+
+.price__button {
+  margin: auto;
+  margin-bottom: 60px;
+  padding-left: 49px;
+  padding-right: 49px;
 }

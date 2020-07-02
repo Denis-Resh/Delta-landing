@@ -8,17 +8,17 @@
   <body>
     <header class="page-header page-wrapper">
       <div class="page-header__logo logo">
-          <a class="logo__image" href="#"><img src="img/logo 1.png" width="242" height="50"></a>
-          <a class="logo__moby" href="#">Коллекция MOBY</a>
+        <a class="logo__image" href="#"><img src="img/logo 1.png" width="242" height="50"></a>
+        <a class="logo__moby" href="#">Коллекция MOBY</a>
       </div>
       <nav class="page-header__nav main-nav">
-        <a class="main-nav__catalog" href="#">Каталог</a>
-        <div class="main-nav__social">
-          <a class="main-nav__vk" href="#" aria-label="Дельта вo Вконтакте"></a>
-          <a class="main-nav__instagram" href="#" aria-label="Дельта в Инстаграм"></a>
-        </div>
-        <a class="main-nav__telephone" href="tel:88422529798">8 (8422) 52-97-98</a>
+        <a class="main-nav__item" href="#">Каталог</a>
       </nav>
+      <div class="page-header__social social">
+        <a class="social__item social__item--vk" href="#" aria-label="Дельта вo Вконтакте"></a>
+        <a class="social__item social__item--instagram" href="#" aria-label="Дельта в Инстаграм"></a>
+        <a class="social__telephone" href="tel:88422529798">8 (8422) 52-97-98</a>
+      </div>
     </header>
     <main>
       <h1 class="visually-hidden">Delta Коллекция MOBY</h1>
@@ -32,28 +32,30 @@
       <section class="price">
         <h2 class="visually-hidden">Расчёт стоимости вашей кухни</h2>
         <div class="price__wrapper">
-          <b class="section-slogan">Пройдите тест за 1 минуту</b>
+          <b class="section-slogan section-slogan--price">Пройдите тест за 1 минуту</b>
           <p class="price__advantages">и узнайте стоимость вашей будущей кухни прямо сейчас</p>
-          <div class="price__advantage-wrapper">
+          <div class="price__advantage-wrapper price__advantage-wrapper--gaurantee">
             <b class="price__slogan">10 лет гарантии</b>
             <p class="price__advantages price__advantages--guarantee">Используем немецкие проверенные материалы и фурнитуру</p>
           </div>
-          <div class="price__advantage-wrapper">
+          <div class="price__advantage-wrapper price__advantage-wrapper--maket">
             <b class="price__slogan">Бесплатный 3D проект</b>
             <p class="price__advantages price__advantages--maket">Дизайнер разработает макет будущей кухни во всех ракурсаx</p>
           </div>
-          <button class="price__button button"><span>Узнать стоимость кухни сейчас</span><span> + получить гарантированный подарок</span> за прохождение теста</button>
+          <button class="price__button button"><b class="button__highlight">Узнать стоимость кухни сейчас &#8594</b>+ получить гарантированный подарок <span class="button__footnote">за прохождение теста</span></button>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery page-wrapper">
         <h2 class="visually-hidden">Галлерея</h2>
-        <b class="section-slogan">Примеры работ</b>
-        <a class="gallery__image-link" href="#"><img src="img/kitchen-1.jpg" width="444" height="300"></a>
-        <a class="gallery__image-link" href="#"><img src="img/kitchen-1.jpg" width="444" height="300"></a>
-        <a class="gallery__image-link" href="#"><img src="img/kitchen-1.jpg" width="444" height="300"></a>
-        <div class="gallery__slider-buttons slider-toggles">
-          <button class="slider-toggles__toggle">вперёд</button>
-          <button class="slider-toggles__toggle">назад</button>
+          <b class="section-slogan section-slogan--gallery">Примеры работ</b>
+          <div class="gallery__wrapper">
+            <a class="gallery__image-link" href="#"><img src="img/kitchen-1.jpg" width="444" height="300"></a>
+            <a class="gallery__image-link" href="#"><img src="img/kitchen-1.jpg" width="444" height="300"></a>
+            <a class="gallery__image-link" href="#"><img src="img/kitchen-1.jpg" width="444" height="300"></a>
+          <div class="gallery__slider-buttons slider-toggles">
+            <button class="gallery__toggle" aria-label="слайд влево"><span class="gallery__arrow gallery__arrow--left"></span></button>
+            <button class="gallery__toggle gallery__toggle--right" aria-label="слайд вправо"><span class="gallery__arrow gallery__arrow--right"></span></button>
+          </div>
         </div>
       </section>
       <section class="advantages">
