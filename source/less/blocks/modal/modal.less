@@ -1,0 +1,67 @@
+.modal {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 115px;
+}
+
+.modal__header {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #f9f5f7;
+}
+
+.modal__logo {
+  padding-left: 53px;
+}
+
+.modal__description {
+  font-size: 18px;
+  line-height: 24px;
+
+  width: 520px;
+  margin: 0;
+  padding-left: 72px;
+  padding-top: 46px;
+  padding-bottom: 27px;
+}
+
+.modal__close {
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  right: 18px;
+  top: 16px;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &::before, &::after {
+    position: absolute;
+
+    left: 10px;
+    bottom: 0;
+
+    content: "";
+
+    height: 20px;
+    width: 1px;
+
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

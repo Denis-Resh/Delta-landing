@@ -1,0 +1,58 @@
+.breadcrumps {
+  display: flex;
+  align-items: center;
+  padding-left: 53px;
+  padding-bottom: 37px;
+}
+
+.breadcrumps__title {
+  padding-right: 25px;
+}
+
+.breadcrumps__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.breadcrumps__item {
+  position: relative;
+
+  width: 11px;
+  height: 11px;
+  padding: 0;
+
+  background-color: #f9f5f7;
+  border-radius: 50%;
+  border: 1px solid #b84956;
+
+  &:hover {
+    background-color: #b84956;
+  }
+
+  &:active {
+    background-color: fade(#b84956, 80%);
+  }
+
+  &--active {
+    background-color: #b84956;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    top: 4px;
+    left: 10px;
+
+    height: 1px;
+    width: 19px;
+
+    background-color: #b84956;
+  }
+}
+
+.breadcrumps__item:last-child::after {
+  display: none;
+}

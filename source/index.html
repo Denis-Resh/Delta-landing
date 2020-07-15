@@ -124,5 +124,58 @@
         </div>
       </div>
     </footer>
+    <section class="modal">
+      <h2 class="visually-hidden">Узнайте стоимость вашей кухни</h2>
+      <header class="modal__header">
+        <a class="modal__logo" href="#"><img src="img/logo2.png" width="242" height="50"></a>
+        <p class="modal__description">Узнайте стоимость вашей будущей кухни за 60 секунд + получите гарантированный подарок</p>
+        <button class="modal__close"></button>
+      </header>
+      <div class="progress-bar">
+        <div class="progress-bar__status">
+          <p class="progress-bar__description"><b>Осталось ответить на <span>6</span> вопросов</b>, чтобы получить гарантированный подарок</p>
+        </div>
+      </div>
+      <div class="breadcrumps">
+        <b class="breadcrumps__title">Шаг 1</b>
+        <div class="breadcrumps__wrapper">
+          <button class="breadcrumps__item breadcrumps__item--active" type="button"></button>
+          <button class="breadcrumps__item" type="button"></button>
+          <button class="breadcrumps__item" type="button"></button>
+          <button class="breadcrumps__item" type="button"></button>
+          <button class="breadcrumps__item" type="button"></button>
+          <button class="breadcrumps__item" type="button"></button>
+          <button class="breadcrumps__item" type="button"></button>
+        </div>
+      </div>
+      <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="modal-form__fieldset">
+          <legend class="modal-form__title">Выберите форму кухни</legend>
+          <ul class="modal-form__list">
+            <li class="modal-form__item">
+              <img src="../img/modal/kitchen-angle.svg" width="220" height="140">
+              <input class="modal-form__input visually-hidden" type="radio" name="kitchen-form" id="kitchen-angle" value="Г-образная" checked>
+              <label class="modal-form__label" for="kitchen-angle">Г-образная</label>
+            </li>
+            <li class="modal-form__item">
+              <img src="../img/modal/kitchen-straight.svg" width="220" height="140">
+              <input class="modal-form__input visually-hidden" type="radio" name="kitchen-form" id="kitchen-straight" value="Прямая">
+              <label class="modal-form__label" for="kitchen-straight">Прямая</label>
+            </li>
+            <li class="modal-form__item">
+              <img src="../img/modal/kitchen-staple.svg" width="220" height="140">
+              <input class="modal-form__input visually-hidden" type="radio" name="kitchen-form" id="kitchen-staple" value="П-образная">
+              <label class="modal-form__label" for="kitchen-staple">П-образная</label>
+            </li>
+            <li class="modal-form__item">
+              <img src="../img/modal/kitchen-parallel.svg" width="220" height="140">
+              <input class="modal-form__input visually-hidden" type="radio" name="kitchen-form" id="kitchen-parallel" value="Параллельная">
+              <label class="modal-form__label" for="kitchen-parallel">Параллельная</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="modal-form__button button" type="submit">На следующий шаг</button>
+      </form>
+    </section>
   </body>
 </html>
