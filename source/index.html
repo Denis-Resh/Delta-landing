@@ -8,7 +8,13 @@
   <body>
     <header class="page-header page-wrapper">
       <div class="logo">
-        <a class="logo__image" href="#"><img src="img/logo 1.png" width="242" height="50"></a>
+        <a class="logo__image" href="#">
+          <picture>
+            <source media="(max-width: 320px" srcset="img/logo-mobile1.png">
+            <source media="(max-width: 720px" srcset="img/logo-tablet-min1.png">
+            <source media="(max-width: 1200px" srcset="img/logo-tablet1.png">
+            <img src="img/logo1.png"></a>
+          </picture>
         <a class="logo__moby" href="#">Коллекция MOBY</a>
       </div>
       <nav class="main-nav">
@@ -35,14 +41,20 @@
           <b class="section-slogan section-slogan--price">Пройдите тест за 1 минуту</b>
           <p class="price__advantages">и узнайте стоимость вашей будущей кухни прямо сейчас</p>
           <div class="price__advantage-wrapper price__advantage-wrapper--gaurantee">
+            <svg class="price__icon-desktop" width="176" height="130"><use xlink:href="../img/gaurantee.svg#gaurantee-desktop"></use></svg>
+            <svg class="price__icon-tablet" width="110" height="81"><use xlink:href="../img/gaurantee.svg#gaurantee-tablet"></use></svg>
+            <svg class="price__icon-tablet-min" width="68" height="50"><use xlink:href="../img/gaurantee.svg#gaurantee-tablet-min"></use></svg>
             <b class="price__slogan">10 лет гарантии</b>
             <p class="price__advantages price__advantages--guarantee">Используем немецкие проверенные материалы и фурнитуру</p>
           </div>
           <div class="price__advantage-wrapper price__advantage-wrapper--maket">
+            <svg class="price__icon-desktop" width="229" height="130"><use xlink:href="../img/maket.svg#maket-desktop"></use></svg>
+            <svg class="price__icon-tablet" width="143" height="83"><use xlink:href="../img/maket.svg#maket-tablet"></use></svg>
+            <svg class="price__icon-tablet-min" width="88" height="50"><use xlink:href="../img/maket.svg#maket-tablet-min"></use>
             <b class="price__slogan">Бесплатный 3D проект</b>
             <p class="price__advantages price__advantages--maket">Дизайнер разработает макет будущей кухни во всех ракурсаx</p>
           </div>
-          <button class="price__button button"><b class="button__highlight">Узнать стоимость кухни сейчас &#8594</b>+ получить гарантированный подарок <span class="button__footnote">за прохождение теста</span></button>
+          <button class="price__button button"><b class="price__button-highlight">Узнать стоимость кухни сейчас &#8594</b><span class="price__button-footnote"><span class="price__button-footnote--weight">+ получить гарантированный подарок</span> за прохождение теста</span></button>
         </div>
       </section>
       <section class="gallery page-wrapper">
@@ -111,7 +123,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper page-wrapper">
         <div class="logo">
-          <a class="logo__image" href="#"><img src="img/logo 1.png" width="242" height="50"></a>
+          <a class="logo__image" href="#"><img src="img/logo1.png" width="242" height="50"></a>
           <a class="logo__moby" href="#">Коллекция MOBY</a>
         </div>
         <nav class="main-nav">

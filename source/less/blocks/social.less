@@ -29,3 +29,33 @@
   color: #ffffff;
   font-size: 18px;
 }
+
+@media (max-width: @tablet-width) {
+  .social__telephone {
+    font-size: 14px;
+  }
+
+  .social__item {
+    width: 20px;
+    height: 20px;
+    padding-right: 12px;
+
+    background-size: 20px 20px;
+  }
+}
+
+@media (max-width: @tablet-min-width) {
+  .social {
+    min-width: 205px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .social {
+    justify-content: center;
+  }
+
+  .social__item:nth-last-child(-n+2) {
+    padding-right: 13px;
+  }
+}

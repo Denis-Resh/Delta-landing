@@ -27,3 +27,42 @@
   width: 680px;
   padding-bottom: 63px;
 }
+
+@media (max-width: @tablet-width) {
+  .section-slogan {
+    font-size: 24px;
+    line-height: 29px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section-slogan--price {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: @tablet-min-width) {
+  .section-slogan {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .section-slogan--price {
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .section-slogan {
+    font-size: 16px;
+    line-height: 20px;
+
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .section-slogan--price {
+    padding-bottom: 0;
+  }
+}

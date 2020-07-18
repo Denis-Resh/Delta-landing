@@ -2,6 +2,7 @@
   color: #ffffff;
   text-align: center;
 
+  min-height: 1000px;
   margin-top: -80px;
 
   background-image: url("../img/background-moby.jpg");
@@ -14,7 +15,7 @@
   width: 1000px;
   margin: 0 auto;
   padding-top: 220px;
-  padding-bottom: 300px;
+  // padding-bottom: 290px;
 }
 
 .moby__title {
@@ -38,4 +39,105 @@
 
 .moby__calculation {
   margin-top: -35px;
+}
+
+@media (max-width: @tablet-width) {
+  .moby {
+    min-height: 625px;
+
+    background-image: url("../img/background-moby-tablet.jpg");
+  }
+
+  .moby__wrapper {
+    width: 625px;
+    // padding-bottom: 173px;
+    padding-top: 138px;
+  }
+
+  .moby__title {
+    font-size: 180px;
+    line-height: 219px;
+  }
+
+  .moby__description {
+    font-size: 16px;
+    line-height: 20px;
+
+    margin-top: -110px;
+    padding: 75px 15px 60px 15px;
+  }
+
+  .moby__calculation {
+    font-size: 14px;
+    line-height: 17px;
+
+    padding: 12px 17px 11px 17px;
+  }
+}
+
+@media (max-width: @tablet-min-width) {
+  .moby {
+    min-height: 375px;
+
+    background-image: url("../img/background-moby-tablet-min.jpg");
+  }
+
+  .moby__wrapper {
+    width: 375px;
+    // padding-bottom: 65px;
+    padding-top: 83px;
+  }
+
+  .moby__title {
+    font-size: 110px;
+    line-height: 134px;
+  }
+
+  .moby__description {
+    font-size: 12px;
+    line-height: 15px;
+
+    margin-top: -65px;
+    padding: 40px 15px 25px 15px;
+  }
+
+  .moby__calculation {
+    font-size: 12px;
+    line-height: 15px;
+
+    padding: 8px 14px 7px 14px;
+    margin-top: 21px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .moby {
+    min-height: 414px;
+    margin-top: -140px;
+
+    background-image: url("../img/background-moby-mobile.jpg");
+  }
+
+  .moby__wrapper {
+    width: 240px;
+    // padding-bottom: 65px;
+    padding-top: 135px;
+  }
+
+  .moby__title {
+    font-size: 75px;
+    line-height: 91px;
+  }
+
+  .moby__description {
+    margin-top: -45px;
+    padding: 40px 5px 30px 5px;
+  }
+
+  .moby__calculation {
+    font-size: 14px;
+    line-height: 17px;
+
+    padding: 12px 37px 11px 37px;
+  }
 }
