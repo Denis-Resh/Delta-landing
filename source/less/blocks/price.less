@@ -1,15 +1,8 @@
 .price {
-  background-color: #f9f6f7;
-}
-
-.price__wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 900px;
-
-  margin: auto;
   padding-top: 60px;
+  padding-bottom: 65px;
+
+  background-color: #f9f6f7;
 }
 
 .price__advantages {
@@ -19,7 +12,20 @@
   text-align: center;
 
   margin: auto;
-  padding-bottom: 50px;
+  margin-bottom: 60px;
+}
+
+.price__advantages--slogan {
+  width: 750px;
+}
+
+.price__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 900px;
+
+  margin: auto;
 }
 
 .price__advantage-wrapper {
@@ -27,13 +33,10 @@
 
   width: 400px;
   text-align: center;
-
-  // margin: auto;
-  // padding-top: 230px;
 }
 
 .price__icon-desktop {
-  padding-bottom: 29px;
+  margin-bottom: 29px;
 }
 
 .price__icon-tablet {
@@ -50,14 +53,15 @@
   font-size: 30px;
   line-height: 37px;
 
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .price__button {
   margin: auto;
-  margin-bottom: 60px;
   padding-left: 49px;
   padding-right: 49px;
+  padding-top: 19px;
+  padding-bottom: 20px;
 }
 
 .price__button-highlight {
@@ -65,7 +69,7 @@
 
   font-size: 24px;
   line-height: 29px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .price__button-footnote {
@@ -77,16 +81,23 @@
 }
 
 @media (max-width: @tablet-width) {
-  .price__wrapper {
-    width: 540px;
-    padding-top: 39px;
+  .price {
+    padding-top: 17px;
   }
 
   .price__advantages {
     font-size: 16px;
     line-height: 20px;
 
-    padding-bottom: 40px;
+    margin-bottom: 38px;
+  }
+
+  .price__advantages--slogan {
+    width: 500px;
+  }
+
+  .price__wrapper {
+    width: 540px;
   }
 
   .price__advantage-wrapper {
@@ -106,7 +117,7 @@
   .price__slogan {
     font-size: 18px;
     line-height: 22px;
-}
+  }
 
   .price__button {
     padding-left: 30px;
@@ -128,16 +139,24 @@
 }
 
 @media (max-width: @tablet-min-width) {
+  .price {
+    padding-top: 22px;
+    padding-bottom: 25px;
+  }
+
   .price__wrapper {
     width: 514px;
-    padding-top: 22px;
   }
 
   .price__advantages {
     font-size: 12px;
     line-height: 15px;
 
-    padding-bottom: 26px;
+    margin-bottom: 20px;
+  }
+
+  .price__advantages--slogan {
+    width: 370px;
   }
 
   .price__advantage-wrapper {
@@ -151,7 +170,7 @@
   .price__icon-tablet-min {
     display: block;
     margin: auto;
-    padding-bottom: 11px;
+    margin-bottom: 11px;
   }
 
   .price__slogan {
@@ -164,8 +183,7 @@
     padding-right: 26px;
     padding-top: 6px;
     padding-bottom: 6px;
-    margin-bottom: 25px;
-}
+  }
 
   .price__button-highlight {
     font-size: 14px;
@@ -186,6 +204,10 @@
     width: 250px;
   }
 
+  .price__advantages--slogan {
+    width: 240px;
+  }
+
   .price__advantage-wrapper--gaurantee {
     order: 2;
   }
@@ -196,13 +218,20 @@
 
   .price__button {
     order: 3;
+    width: 240px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .price__button-highlight {
+    margin-bottom: 5px;
   }
 
   .price__button-footnote {
     display: inline-block;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 15px;
 
-    width: 190px;
+    width: 200px;
   }
 }

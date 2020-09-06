@@ -25,6 +25,45 @@
 
   width: 645px;
   margin: 0;
+}
 
+@media (max-width: @tablet-width) {
+  .progress-bar {
+    width: 720px;
+  }
 
+  .progress-bar__status {
+    width: 107px;
+  }
+
+  .progress-bar__description {
+    position: absolute;
+
+    top: 6px;
+    left: 250px;
+
+    line-height: 18px;
+
+    width: 385px;
+    margin: 0;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .progress-bar {
+    width: 320px;
+    height: 65px;
+  }
+
+  .progress-bar__status {
+    width: 46px;
+    height: 65px;
+  }
+
+  .progress-bar__description {
+    left: 39px;
+
+    font-size: 12px;
+    width: 239px;
+  }
 }

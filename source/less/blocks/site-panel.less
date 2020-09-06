@@ -1,0 +1,36 @@
+.site-panel {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  line-height: 22px;
+}
+
+// .site-panel__wrapper {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   flex-wrap: wrap;
+// }
+
+@media (max-width: @tablet-width) {
+  .site-panel {
+    font-size: 14px;
+    line-height: 17px;
+
+    padding-top: 19px;
+  }
+}
+
+@media (max-width: @tablet-min-width) {
+  .site-panel {
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .site-panel {
+    flex-direction: column;
+
+    padding-top: 0;
+  }
+}

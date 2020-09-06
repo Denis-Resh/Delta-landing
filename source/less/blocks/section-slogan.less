@@ -6,26 +6,26 @@
 
   margin: 0 auto;
   text-align: center;
-  padding-left: 150px;
-  padding-right: 150px;
-}
 
-.section-slogan--price {
-  padding-bottom: 20px;
-}
+  &--price {
+    width: 600px;
+    margin-bottom: 10px;
+  }
 
-.section-slogan--gallery {
-  width: 700px;
-  text-align: center;
-  padding-top: 78px;
-  padding-bottom: 60px;
-  padding-left: 500px;
-  padding-right: 500px;
-}
+  &--gallery {
+    width: 500px;
+    text-align: center;
+    margin-bottom: 43px;
+  }
 
-.section-slogan--disign {
-  width: 680px;
-  padding-bottom: 63px;
+  &--disign {
+    width: 680px;
+    margin-bottom: 47px;
+  }
+
+  &--catalog-link {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: @tablet-width) {
@@ -33,12 +33,27 @@
     font-size: 24px;
     line-height: 29px;
 
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+    width: 500px;
 
-  .section-slogan--price {
-    padding-bottom: 10px;
+    &--price {
+      margin-bottom: 10px;
+    }
+
+    &--gallery {
+      width: 300px;
+      text-align: center;
+
+      margin-bottom: 26px;
+    }
+
+    &--disign {
+      width: 594px;
+      margin-bottom: 32px;
+    }
+
+    &--catalog-link {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -46,10 +61,32 @@
   .section-slogan {
     font-size: 18px;
     line-height: 22px;
-  }
 
-  .section-slogan--price {
-    padding-bottom: 5px;
+    width: 400px;
+
+    &--price {
+      margin-bottom: 5px;
+    }
+
+    &--gallery {
+      width: 200px;
+      text-align: center;
+
+      margin-bottom: 16px;
+    }
+
+    &--disign {
+      position: relative;
+      top: 20px;
+
+      width: 356px;
+      margin-bottom: 0;
+    }
+
+    &--catalog-link {
+      width: 579px;
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -58,11 +95,25 @@
     font-size: 16px;
     line-height: 20px;
 
-    padding-left: 9px;
-    padding-right: 9px;
-  }
+    width: 250px;
 
-  .section-slogan--price {
-    padding-bottom: 0;
+    &--price {
+      padding-bottom: 0;
+    }
+
+    &--disign {
+      position: static;
+      font-size: 18px;
+      line-height: 22px;
+      width: 244px;
+      padding-bottom: 10px;
+    }
+
+    &--catalog-link {
+      font-size: 14px;
+      line-height: 17px;
+
+      width: 243px;
+    }
   }
 }

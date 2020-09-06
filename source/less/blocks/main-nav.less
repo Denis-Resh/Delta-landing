@@ -3,16 +3,27 @@
   align-items: center;
   flex-wrap: wrap;
 
-  padding-right: 33px;
+  padding-right: 45px;
   margin-left: auto;
 }
 
 .main-nav__item {
   color: #ffffff;
   font-size: 14px;
+  line-height: 17px;
+}
+
+@media (max-width: @tablet-width) {
+  .main-nav {
+     padding-right: 50px;
+  }
 }
 
 @media (max-width: @tablet-min-width) {
+  .main-nav {
+    padding-right: 33px;
+  }
+
   .main-nav__item {
     font-size: 12px;
     line-height: 15px;
@@ -22,7 +33,6 @@
 @media (max-width: @mobile-width) {
   .main-nav {
     order: -1;
-    padding-right: 0;
-    padding-bottom: 3px;
+    padding-right: 38px;
   }
 }

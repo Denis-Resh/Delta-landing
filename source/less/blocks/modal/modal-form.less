@@ -69,3 +69,62 @@
 .modal-form__button {
   margin-top: 35px;
 }
+
+@media (max-width: @tablet-width) {
+  .modal-form {
+    padding-left: 99px;
+  }
+
+  .modal-form__list {
+    flex-wrap: wrap;
+
+    width: 487px;
+  }
+
+  .modal-form__item {
+    margin-bottom: 27px;
+  }
+
+  .modal-form__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .modal-form {
+    padding-left: 32px;
+  }
+
+  .modal-form__list {
+    width: 220px;
+    margin-bottom: 41px;
+  }
+
+  .modal-form__title {
+    font-size: 18px;
+    line-height: 24px;
+
+    width: 175px;
+    padding-bottom: 4px;
+  }
+
+  .modal-form__item {
+    margin-bottom: 25px;
+  }
+
+  .modal-form__item:nth-last-child(-n+2) {
+    margin-bottom: 25px;
+  }
+
+  .modal-form__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .modal-form__list {
+
+  }
+
+  .modal-form__button {
+    margin-top: 0;
+  }
+}
